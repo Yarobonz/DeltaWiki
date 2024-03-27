@@ -2,4 +2,24 @@
 //Simple AI search possibly?
 //dialouge Trees?
 //Chapter Select (checkboxes to allow multiple chapters)
-<script src="dialogue.js"></script>
+
+<div id="boxes">
+
+</div>
+<script>
+  function CreateBox(text) {
+    const boxesDiv = document.getElementById('boxes');
+    const newDiv = document.createElement('div');
+    newDiv.textContent = text;
+    newDiv.style.backgroundColor = 'black';
+    newDiv.style.color = 'white';
+    newDiv.style.padding = '5px';
+    newDiv.style.border = '1px solid white'; // Add white border
+    newDiv.style.margin = '5px'; // Add margin for spacing
+    newDiv.id = 'testing';
+    boxesDiv.appendChild(newDiv);
+  }
+
+  CreateBox("testing");
+  CreateBox("testing2");
+</script>
